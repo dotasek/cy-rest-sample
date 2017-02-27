@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.cytoscape.rest.cy-rest-sample
+Bundle-Name: Sample App - CyREST Resource
+Bundle-Version: 1.0
+Built-By: davidotasek
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1487789596878
+Bundle-Activator: org.cytoscape.cyrestsample.internal.CyActivator
+Import-Package: javax.ws.rs;version="[2.0,3)",org.cytoscape.service.ut
+ il;version="[3.3,4)",org.osgi.framework;version="[1.5,2)"
+Created-By: Apache Maven Bundle Plugin
+Tool: Bnd-1.15.0
+Build-Jdk: 1.8.0_111
+
