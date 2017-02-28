@@ -1,10 +1,11 @@
 package org.cytoscape.cyrestsample.internal;
 
-
 public class GreetingResourceImpl implements GreetingResource
 {
-    public SimpleMessage greeting()
-    {
-    	  return new SimpleMessage("Hello!");
+	private SimpleMessage message = new SimpleMessage("Hello!");
+	
+	@Override
+    public SimpleMessage greeting() {
+		return message;
     }
 }

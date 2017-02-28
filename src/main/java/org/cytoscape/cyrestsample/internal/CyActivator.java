@@ -18,6 +18,7 @@ public class CyActivator extends AbstractCyActivator {
 		System.out.println("CyREST Sample start");
 		try {
 		registerService(bc, new GreetingResourceImpl(), GreetingResource.class, new Properties());
+		registerService(bc, new MessageMapImpl(), MessageMap.class, new Properties());
 		}
 		catch (Exception e)
 		{

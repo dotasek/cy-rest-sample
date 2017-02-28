@@ -5,22 +5,22 @@ package org.cytoscape.cyrestsample.internal;
  * a POJO (Plain Old Java Object) that follows some key Java Bean Conventions 
  * (https://en.wikipedia.org/wiki/JavaBeans#JavaBean_conventions).
  * 
- * 	It must have a default constructor 
+ * 	It should have a default constructor 
  * 		public SimpleMessage() 
- * 	It must have properly formatted getters and setters for any properties 
+ * 	It should have properly formatted getters and setters for any properties 
  * 		for message, we have getMessage() and setMessage().
  *  
  *  Additionally, it must not contain loops in data structure. If, for example, SimpleMessage were to contain another 
  *  SimpleMessage as a property, this object couldn't be marshaled.
  * 
- * If these aren't followed, you will likely get the dreaded Internal Server Error when you access a resource URL that 
+ * If these aren't followed, you could get the dreaded Internal Server Error when you access a resource URL that 
  * uses your object.
  */
 public class SimpleMessage 
 {
 	String message;
 	
-	//Super important. Always have a default constructor for anything returned by a JAX-RS annotated method.
+	//It's good practice to have a default constructor for anything returned by a JAX-RS annotated method.
 	public SimpleMessage()
 	{
 		
